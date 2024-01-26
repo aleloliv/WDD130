@@ -5,7 +5,7 @@
 }
 @font-face 
 {
-    font-family: "Joselin-Sans";
+    font-family: "Josefin-Sans";
     src: url(fonts\josefin-sans\static\JosefinSans-Medium.ttf);
 }
 :root
@@ -16,7 +16,7 @@
     --accent2-color: #449DD1;
 
     --heading-font: 'Caveat', serif;
-    --paragraph-font: 'Joselin-Sans', serif;
+    --paragraph-font: 'Josefin-Sans', serif;
 
     --nav-background-color: #449DD1;
     --nav-link-color: #E3170A;

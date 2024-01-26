@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rock+Salt&display=swap');
+
+:root
+{
+    --primary-color: #E3170A;
+    --secondary-color: #32E875;
+    --accent1-color: #DD962C;
+    --accent2-color: #449DD1;
+
+    --heading-font: 'Rock Salt', cursive;
+    --paragraph-font: 'Josefin Sans', sans-serif;
+
+    --nav-background-color: #E3170A;
+    --nav-link-color: black;
+    --nav-hover-link-color: #32E875;
+    --nav-hover-background-color: #DD962C;
+}
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 100px;
+    background-color: #fff;
+}
+
+h2, h3, h4, h5 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h6 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-family: var(--heading-font);
+    color: black;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+nav a {
+    color: var(--nav-link-color);
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+header {
+    padding: 10px;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    font-family: var(--heading-font);
+    font-size: xxx-large;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 1, 80, 0.7);
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
+    padding-left: 50%;
+}
+
+.hero article img {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+.hero article p {
+    color: white;
+    width: 75%;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: x-large;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+}
+
+footer img {
+    padding: 0.5%;
+    width: 3%;
+}
