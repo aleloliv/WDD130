@@ -1,13 +1,7 @@
-@font-face 
-{
-    font-family: "Rock-Salt";
-    src: url(fonts\Rock_Salt\RockSalt-Regular.ttf);
-}
-@font-face 
-{
-    font-family: "Josefin-Sans";
-    src: url(fonts\josefin-sans\static\JosefinSans-Medium.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 :root
 {
     --primary-color: #E3170A;
@@ -15,8 +9,8 @@
     --accent1-color: #DD962C;
     --accent2-color: #449DD1;
 
-    --heading-font: 'Caveat', serif;
-    --paragraph-font: 'Josefin-Sans', serif;
+    --heading-font: 'Rock Salt', cursive;
+    --paragraph-font: 'Josefin Sans', serif;
 
     --nav-background-color: #449DD1;
     --nav-link-color: #E3170A;
@@ -41,6 +35,7 @@ header
 }
 p
 {
+    font-family: var(--paragraph-font);
     padding: 25px;
 }
 nav
