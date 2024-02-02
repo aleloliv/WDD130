@@ -154,7 +154,7 @@ header nav a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 0.5fr 3fr 0.5fr;
-    grid-gap: 10px; /* Adjust the gap as needed */
+    grid-gap: 10px;
     text-align: center;
     align-items: center;
 }
