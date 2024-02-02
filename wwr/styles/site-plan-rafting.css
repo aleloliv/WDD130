@@ -4,18 +4,18 @@
 
 :root
 {
-    --primary-color: #E3170A;
-    --secondary-color: #32E875;
-    --accent1-color: #DD962C;
-    --accent2-color: #449DD1;
+    --primary-color: #0C4A6E; 
+    --secondary-color: #53B56D; 
+    --accent1-color: #FFA400;   
+    --accent2-color: #8338EC;   
 
     --heading-font: 'Rock Salt', cursive;
-    --paragraph-font: 'Josefin Sans', serif;
+    --paragraph-font: 'Josefin Sans', sans-serif;
 
-    --nav-background-color: #449DD1;
-    --nav-link-color: #E3170A;
-    --nav-hover-link-color: #32E875;
-    --nav-hover-background-color: #DD962C;
+    --nav-background-color: #53B56D; 
+    --nav-link-color: #FFF; 
+    --nav-hover-link-color: #FFA400; 
+    --nav-hover-background-color: #0C4A6E; 
 }
 body
 {
