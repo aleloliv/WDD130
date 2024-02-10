@@ -35,8 +35,8 @@ form {
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 2.6em;
-    background-color: floralwhite;
+    border-radius: 0.5em;
+    background-color: rgb(220, 220, 220);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
 }
@@ -63,8 +63,10 @@ label, input, button, select, textarea {
 
 label {
     display: inline-block;
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
+    color: black;
+    font-weight: bold;
 }
 
 input, select, textarea {
@@ -82,16 +84,13 @@ input[type="checkbox"] {
 input[type="submit"] {
     margin: 1rem 0;
     padding: 0.75rem 2rem;
-    background-color: darkgreen;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
+    background-color: #001f3f;
+    color: #f7f7f7;
     font-size: 1.2rem;
-    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #001f3f;
+    background-color: darkgreen;
 }
 
 footer {
@@ -101,19 +100,4 @@ footer {
     font-size: 0.8em;
     color: #777;
     border-top: 1px solid #ccc;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
-    margin: 0.5rem 0;
 }
