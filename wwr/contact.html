@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Aftin Contact Us</title>
+    <meta name="description" content="A contact us page with all the information that the user needs for contacting the company, including a form that the user can fill and send their info to the company">
+    <meta name="author" content="Alexandre de Oliveira">
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- style sheet to alter the style of the page-->
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/rafinglogo.png" alt="Rafting Site Logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="ch1">Contact Us</h1>
+        <section class="contact-info">
+            <h2 id="ch2">Utah, United States</h2>
+            <img class="icon" src="images/location-pin.jpg" alt="location pin">
+            <p>1453 N UT-24, Hanksville, UT 84734</p>
+            <img class="icon" src="images/envelope.png" alt="letter">
+            <p>contact-us@company.com</p>
+            <img class="icon" src="images/telephone.png" alt="phone">
+            <p>+1-617-555-0108</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1563.4672246695793!2d-110.69401182215246!3d38.39676466854932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707617292952!5m2!1spt-BR!2sbr" width="800" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="employee-section">
+            <figure>
+                <img class="employee" src="images/happy-employee-1.jpg" alt="employee1">
+                <figcaption>Adam Smith | Head Guide: Rapids Navigator</figcaption>
+            </figure>
+            <figure>
+                <img class="employee" src="images/happy-employee-3.jpg" alt="employee2">
+                <figcaption>Ethan Johnson | CEO: River Master</figcaption>
+            </figure>
+            <figure>
+                <img class="employee" src="images/happy-employee-2.jpg" alt="employee3">
+                <figcaption>Nathan Williams | Operations Manager: Adventure Coordinator</figcaption>
+            </figure>
+        </section>
+        <section class="form-section">
+            <form>
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+                    <div>
+                        <p>Send us a message and we'll respond within 24 hours.</p>
+                    </div>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="purpose" name="purpose_hidden" style="display: none;">
+                        <label for="purpose">Purpose</label><br>
+                        <input type="radio" id="purpose1" name="purpose1">
+                        <label for="purpose1">General Inquiry</label>
+                        <input type="radio" id="purpose2" name="purpose2">
+                        <label for="purpose2">Reservation Question</label>
+                        <input type="radio" id="purpose3" name="purpose3">
+                        <label for="purpose3">Website Suggestion</label><br>
+                    </div>
+                    <div>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="3" placeholder="Type here..."></textarea><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="subscription" name="subscription">
+                    <label for="subscription">Please subscribe me to the monthly newsletter</label><br>
+                    </div>
+                    <input type="submit" value="SEND">
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>©2024 | Rafting Aftin | Alexandre de Oliveira</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/x">
+                <img src="images/x(twitter).png" alt="X (Twitter)">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
