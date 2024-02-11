@@ -397,7 +397,8 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="button"] {
-    width: 30%;
+    text-align: center;
+    width: 50%;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
