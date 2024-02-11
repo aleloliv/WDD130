@@ -302,6 +302,8 @@ main section p {
 }
 
 iframe {
+    width: 800px;
+    height: 450px;
     grid-column: 4 / span 6;
     grid-row: 1 / 5;
     justify-self: start;
@@ -394,7 +396,7 @@ input[type="radio"], input[type="checkbox"] {
     height: 16px;
 }
 
-input[type="submit"] {
+input[type="button"] {
     width: 30%;
     align-self: center;
     justify-self: center;
@@ -405,6 +407,6 @@ input[type="submit"] {
     font-size: 1.2rem;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: var(--secondary-color);
 }
