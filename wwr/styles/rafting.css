@@ -396,7 +396,7 @@ input[type="radio"], input[type="checkbox"] {
     height: 16px;
 }
 
-input[type="button"] {
+button[type="submit"] {
     text-align: center;
     width: 50%;
     align-self: center;
@@ -408,6 +408,6 @@ input[type="button"] {
     font-size: 1.2rem;
 }
 
-input[type="button"]:hover {
+button[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
