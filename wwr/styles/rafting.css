@@ -329,9 +329,9 @@ figure {
     position: relative;
 }
 
-figcaption {
+.employee-section figcaption {
     position: absolute;
-    top: 100%; /* Position the figcaption below the image */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -409,5 +409,272 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Trips Page */
+
+.trips-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.main-image {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.price-table {
+    padding: 20px;
+    margin-top: 20px;
+    grid-row: 2/4;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.price-table table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: var(--paragraph-font), sans-serif;
+}
+
+thead, tfoot {
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 25px 50px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+.trips {
+    grid-column: 2;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.trip1, .trip2, .trip3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trip1 figure, .trip2 figure, .trip3 figure {
+    margin: 10px;
+}
+
+.trip1 figure img, .trip2 figure img, .trip3 figure img {
+    width: 400px;
+    height: auto;
+}
+
+.trip1 figcaption, .trip2 figcaption, .trip3 figcaption {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    background-color: transparent;
+}
+
+.trip1 button, .trip2 button, .trip3 button {
+    margin-top: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    background-color: var(--accent2-color);
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+}
+
+.trip1 button:hover, .trip2 button:hover, .trip3 button:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+.contact-call {
+    font-family: var(--heading-font);
+    grid-row: 4;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-call button {
+    margin-top: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    background-color: var(--accent2-color);
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-call button:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Index Page */
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+}
+
+.hero-image-index {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+}
+
+.hero-image-index img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image-index h1 {
+    font-family: var(--heading-font);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.showcase {
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.showcase img {
+    width: 350px;
+    height: auto;
+}
+
+.showcase figcaption {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    background-color: transparent;
+}
+
+.side-by-side {
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.newsletter-form {
+    padding: 1rem;
+    margin: 0;
+    grid-column: 1;
+    justify-self: center;
+}
+
+.newsletter-form div {
+    padding: 0.2rem;
+}
+
+.newsletter-form h2 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.newsletter-form form {
+    width: 350px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    font-family: var(--paragraph-font);
+}
+
+.newsletter-form label {
+    text-align: left;
+}
+
+.check {
+    justify-self: center;
+}
+
+.newsletter-form input[type="checkbox"] {
+    text-align: center;
+}
+
+.go-trips {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.go-trips h2 {
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+}
+
+.go-trips button {
+    margin-top: 1rem; /* Adjust margin as needed */
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent2-color);
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.go-trips button:hover {
     background-color: var(--secondary-color);
 }
